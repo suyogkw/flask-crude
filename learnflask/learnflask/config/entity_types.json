@@ -1,0 +1,56 @@
+{
+  "main_entities": [
+    {
+      "entity_name": "employees",
+      "history_entity": "employeeshistory",
+      "columns": {
+        "employee_id": {
+          "value_mode": "auto"
+        },
+        "last_name": {
+          "value_mode": "client",
+          "type": "str",
+          "control_type": "text"
+        },
+        "first_name": {
+          "value_mode": "server",
+          "type": "str",
+          "control_type": "datetime"
+        },
+        "salary": {
+          "value_mode": "client",
+          "type": "int",
+          "control_type": "calendar"
+        }
+      }
+    }
+  ],
+  "history_entities": [
+    {
+      "entity_name": "employeeshistory",
+      "main_entity": "employees",
+      "columns": {
+        "employee_id": {
+          "value_mode": "auto"
+        },
+        "last_name": {
+          "value_mode": "client",
+          "type": "string",
+          "control_type": "text"
+        },
+        "first_name": {
+          "value_mode": "server",
+          "type": "string",
+          "control_type": "datetime"
+        },
+        "salary": {
+          "value_mode": "server",
+          "type": "string",
+          "control_type": "datetime"
+        }
+      }
+    }
+  ]
+  
+
+}
